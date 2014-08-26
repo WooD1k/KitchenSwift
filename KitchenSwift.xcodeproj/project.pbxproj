@@ -10,9 +10,11 @@
 		CB1CDDA619AB642300938F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDDA519AB642300938F7B /* AppDelegate.swift */; };
 		CB1CDDA819AB642300938F7B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDDA719AB642300938F7B /* FirstViewController.swift */; };
 		CB1CDDAA19AB642300938F7B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDDA919AB642300938F7B /* SecondViewController.swift */; };
-		CB1CDDAD19AB642300938F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1CDDAB19AB642300938F7B /* Main.storyboard */; };
 		CB1CDDAF19AB642300938F7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1CDDAE19AB642300938F7B /* Images.xcassets */; };
 		CB1CDDBB19AB642300938F7B /* KitchenSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDDBA19AB642300938F7B /* KitchenSwiftTests.swift */; };
+		CBFF988A19ACAC320053F6D0 /* TabGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF988919ACAC320053F6D0 /* TabGroupsViewController.swift */; };
+		CBFF988D19ACB6760053F6D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF988B19ACB6760053F6D0 /* Main.storyboard */; };
+		CBFF989019ACD0CB0053F6D0 /* WindowPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF988F19ACD0CB0053F6D0 /* WindowPropertiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +33,13 @@
 		CB1CDDA519AB642300938F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB1CDDA719AB642300938F7B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CB1CDDA919AB642300938F7B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		CB1CDDAC19AB642300938F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB1CDDAE19AB642300938F7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB1CDDB419AB642300938F7B /* KitchenSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1CDDB919AB642300938F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1CDDBA19AB642300938F7B /* KitchenSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenSwiftTests.swift; sourceTree = "<group>"; };
+		CBFF988919ACAC320053F6D0 /* TabGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabGroupsViewController.swift; sourceTree = "<group>"; };
+		CBFF988C19ACB6760053F6D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBFF988F19ACD0CB0053F6D0 /* WindowPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowPropertiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,11 @@
 		CB1CDDA219AB642300938F7B /* KitchenSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CBFF988B19ACB6760053F6D0 /* Main.storyboard */,
+				CBFF988E19ACBABF0053F6D0 /* BaseUI */,
 				CB1CDDA519AB642300938F7B /* AppDelegate.swift */,
 				CB1CDDA719AB642300938F7B /* FirstViewController.swift */,
 				CB1CDDA919AB642300938F7B /* SecondViewController.swift */,
-				CB1CDDAB19AB642300938F7B /* Main.storyboard */,
 				CB1CDDAE19AB642300938F7B /* Images.xcassets */,
 				CB1CDDA319AB642300938F7B /* Supporting Files */,
 			);
@@ -110,6 +115,15 @@
 				CB1CDDB919AB642300938F7B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBFF988E19ACBABF0053F6D0 /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF988919ACAC320053F6D0 /* TabGroupsViewController.swift */,
+				CBFF988F19ACD0CB0053F6D0 /* WindowPropertiesViewController.swift */,
+			);
+			name = BaseUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1CDDAD19AB642300938F7B /* Main.storyboard in Resources */,
 				CB1CDDAF19AB642300938F7B /* Images.xcassets in Resources */,
+				CBFF988D19ACB6760053F6D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1CDDAA19AB642300938F7B /* SecondViewController.swift in Sources */,
+				CBFF988A19ACAC320053F6D0 /* TabGroupsViewController.swift in Sources */,
 				CB1CDDA619AB642300938F7B /* AppDelegate.swift in Sources */,
 				CB1CDDA819AB642300938F7B /* FirstViewController.swift in Sources */,
+				CBFF989019ACD0CB0053F6D0 /* WindowPropertiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,10 +252,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CB1CDDAB19AB642300938F7B /* Main.storyboard */ = {
+		CBFF988B19ACB6760053F6D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB1CDDAC19AB642300938F7B /* Base */,
+				CBFF988C19ACB6760053F6D0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -399,6 +415,7 @@
 				CB1CDDC019AB642300938F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB1CDDC119AB642300938F7B /* Build configuration list for PBXNativeTarget "KitchenSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +424,7 @@
 				CB1CDDC319AB642300938F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
