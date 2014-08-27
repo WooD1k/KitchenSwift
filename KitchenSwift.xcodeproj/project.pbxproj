@@ -13,6 +13,7 @@
 		CB1CDDAF19AB642300938F7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1CDDAE19AB642300938F7B /* Images.xcassets */; };
 		CB1CDDBB19AB642300938F7B /* KitchenSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDDBA19AB642300938F7B /* KitchenSwiftTests.swift */; };
 		CB35D12719ADE22900416AC8 /* plaster1_crk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB35D12619ADE22900416AC8 /* plaster1_crk.jpg */; };
+		CBC0A4A319AE178A006AB062 /* ViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0A4A219AE178A006AB062 /* ViewsViewController.swift */; };
 		CBFF988A19ACAC320053F6D0 /* TabGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF988919ACAC320053F6D0 /* TabGroupsViewController.swift */; };
 		CBFF988D19ACB6760053F6D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF988B19ACB6760053F6D0 /* Main.storyboard */; };
 		CBFF989019ACD0CB0053F6D0 /* WindowPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF988F19ACD0CB0053F6D0 /* WindowPropertiesViewController.swift */; };
@@ -39,6 +40,7 @@
 		CB1CDDB919AB642300938F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1CDDBA19AB642300938F7B /* KitchenSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenSwiftTests.swift; sourceTree = "<group>"; };
 		CB35D12619ADE22900416AC8 /* plaster1_crk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plaster1_crk.jpg; sourceTree = "<group>"; };
+		CBC0A4A219AE178A006AB062 /* ViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsViewController.swift; sourceTree = "<group>"; };
 		CBFF988919ACAC320053F6D0 /* TabGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabGroupsViewController.swift; sourceTree = "<group>"; };
 		CBFF988C19ACB6760053F6D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBFF988F19ACD0CB0053F6D0 /* WindowPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowPropertiesViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				CBFF988919ACAC320053F6D0 /* TabGroupsViewController.swift */,
 				CBFF988F19ACD0CB0053F6D0 /* WindowPropertiesViewController.swift */,
+				CBC0A4A219AE178A006AB062 /* ViewsViewController.swift */,
 			);
 			name = BaseUI;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1CDDAA19AB642300938F7B /* SecondViewController.swift in Sources */,
+				CBC0A4A319AE178A006AB062 /* ViewsViewController.swift in Sources */,
 				CBFF988A19ACAC320053F6D0 /* TabGroupsViewController.swift in Sources */,
 				CB1CDDA619AB642300938F7B /* AppDelegate.swift in Sources */,
 				CB1CDDA819AB642300938F7B /* FirstViewController.swift in Sources */,

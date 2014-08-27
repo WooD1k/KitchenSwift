@@ -49,6 +49,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			let wndPropVC: UIViewController = storyboard.instantiateViewControllerWithIdentifier("wndProp") as UIViewController
 			wndPropVC.title = "Window Properties"
 			self.navigationController.pushViewController(wndPropVC, animated: true)
+		case 4:
+			let viewsVC: UIViewController = storyboard.instantiateViewControllerWithIdentifier("views") as UIViewController
+			viewsVC.title = "Window Properties"
+			self.navigationController.pushViewController(viewsVC, animated: true)
 		default:
 			let alert = UIAlertView()
 			alert.message = "\nController isn't specified"

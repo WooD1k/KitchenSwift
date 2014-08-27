@@ -39,6 +39,7 @@
                         <outlet property="baseUiTableView" destination="nyO-gr-osL" id="52i-Hv-TCX"/>
                         <segue destination="EBB-dB-sN9" kind="show" identifier="baseToTabGroups" id="JbY-6A-ICl"/>
                         <segue destination="L0y-Jg-53R" kind="show" identifier="baseToWndProps" id="wnk-Ol-dGl"/>
+                        <segue destination="Adr-fd-k41" kind="show" identifier="baseToViews" id="9fg-oF-hpN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -110,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhN-ND-abk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="-1485"/>
+            <point key="canvasLocation" x="807" y="-1729"/>
         </scene>
         <!--Window Properties View Controller-->
         <scene sceneID="Sgd-7W-Dq0">
@@ -203,7 +204,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBi-dU-eiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="-746"/>
+            <point key="canvasLocation" x="807" y="-1062"/>
+        </scene>
+        <!--Views View Controller-->
+        <scene sceneID="mD7-NW-22z">
+            <objects>
+                <viewController storyboardIdentifier="views" id="Adr-fd-k41" customClass="ViewsViewController" customModule="KitchenSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aek-Xx-VsT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rk9-fu-0Hw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oo5-Mr-asc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-mm-jCC">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Adr-fd-k41" id="QFy-Ub-fy0"/>
+                                    <outlet property="delegate" destination="Adr-fd-k41" id="NGU-pZ-Jp7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="H6d-mm-jCC" secondAttribute="trailing" id="1jy-z7-pK0"/>
+                            <constraint firstItem="H6d-mm-jCC" firstAttribute="top" secondItem="aek-Xx-VsT" secondAttribute="top" id="JG4-57-ayL"/>
+                            <constraint firstItem="Rk9-fu-0Hw" firstAttribute="top" secondItem="H6d-mm-jCC" secondAttribute="bottom" id="NvR-XK-ynk"/>
+                            <constraint firstItem="H6d-mm-jCC" firstAttribute="leading" secondItem="oo5-Mr-asc" secondAttribute="leading" id="u1O-LB-vmg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewsTableView" destination="H6d-mm-jCC" id="tVr-bQ-MmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unt-2a-FhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="-327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kpd-do-xCj">
