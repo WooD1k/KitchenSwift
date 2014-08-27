@@ -123,8 +123,83 @@
                     <view key="view" contentMode="scaleToFill" id="LDG-Ug-FFq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F64-Jo-UR3">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD0-S3-8lg">
+                                <rect key="frame" x="239" y="84" width="121" height="30"/>
+                                <state key="normal" title="Change BG Color">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doChangeBgColor:" destination="L0y-Jg-53R" eventType="touchUpInside" id="Ily-Hi-WTQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6A-bB-G7X">
+                                <rect key="frame" x="237" y="122" width="126" height="30"/>
+                                <state key="normal" title="Change BG Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doChangeBgImage:" destination="L0y-Jg-53R" eventType="touchUpInside" id="Cgq-cE-mOD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmj-nb-oa3">
+                                <rect key="frame" x="229" y="160" width="140" height="30"/>
+                                <state key="normal" title="Toggle Height/Width">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doToggleHeightWidth:" destination="L0y-Jg-53R" eventType="touchUpInside" id="UhL-mh-ec1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dh-WO-cMV">
+                                <rect key="frame" x="200" y="198" width="199" height="30"/>
+                                <state key="normal" title="Layout/Dimension Properties">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doLayoutDimensionProperties:" destination="L0y-Jg-53R" eventType="touchUpInside" id="ID4-iw-tsn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvR-kd-CC5">
+                                <rect key="frame" x="215" y="236" width="171" height="30"/>
+                                <state key="normal" title="Toggle Border Properties">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doToggleBorderProperties:" destination="L0y-Jg-53R" eventType="touchUpInside" id="CmB-5d-cui"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Dh-WO-cMV" firstAttribute="top" secondItem="lmj-nb-oa3" secondAttribute="bottom" constant="8" id="7Vb-fL-vrg"/>
+                            <constraint firstAttribute="centerX" secondItem="O6A-bB-G7X" secondAttribute="centerX" id="CUc-zy-hz1"/>
+                            <constraint firstAttribute="centerX" secondItem="SD0-S3-8lg" secondAttribute="centerX" constant="0.5" id="LBa-AX-wkM"/>
+                            <constraint firstItem="F64-Jo-UR3" firstAttribute="leading" secondItem="LDG-Ug-FFq" secondAttribute="leading" id="M3V-9u-2M5"/>
+                            <constraint firstItem="SD0-S3-8lg" firstAttribute="top" secondItem="uNN-co-C8a" secondAttribute="bottom" constant="20" id="MaH-SA-47f"/>
+                            <constraint firstAttribute="centerX" secondItem="lmj-nb-oa3" secondAttribute="centerX" constant="1" id="NiD-Xz-01p"/>
+                            <constraint firstItem="j9f-72-2kK" firstAttribute="top" secondItem="F64-Jo-UR3" secondAttribute="bottom" id="PTG-RG-54g"/>
+                            <constraint firstItem="lmj-nb-oa3" firstAttribute="top" secondItem="O6A-bB-G7X" secondAttribute="bottom" constant="8" id="TyS-Zg-391"/>
+                            <constraint firstItem="F64-Jo-UR3" firstAttribute="top" secondItem="uNN-co-C8a" secondAttribute="bottom" id="W7u-26-yOL"/>
+                            <constraint firstItem="O6A-bB-G7X" firstAttribute="top" secondItem="SD0-S3-8lg" secondAttribute="bottom" constant="8" id="X8V-I5-bqF"/>
+                            <constraint firstAttribute="centerX" secondItem="2Dh-WO-cMV" secondAttribute="centerX" constant="0.5" id="cjF-8J-q1z"/>
+                            <constraint firstAttribute="centerX" secondItem="mvR-kd-CC5" secondAttribute="centerX" constant="-0.5" id="lGW-sq-4l4"/>
+                            <constraint firstAttribute="trailing" secondItem="F64-Jo-UR3" secondAttribute="trailing" id="tDS-jz-PaS"/>
+                            <constraint firstItem="mvR-kd-CC5" firstAttribute="top" secondItem="2Dh-WO-cMV" secondAttribute="bottom" constant="8" id="xRU-PZ-QHz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="F64-Jo-UR3" id="ZHy-dY-SZi"/>
+                        <outlet property="borderPropertiesToggle" destination="mvR-kd-CC5" id="vQj-YU-qAR"/>
+                        <outlet property="changeBgColor" destination="SD0-S3-8lg" id="GtS-XO-WbL"/>
+                        <outlet property="changeBgImage" destination="O6A-bB-G7X" id="gPU-Jy-qtO"/>
+                        <outlet property="heightWidthToggle" destination="lmj-nb-oa3" id="ahw-n6-Qxt"/>
+                        <outlet property="layoutDimensionProp" destination="2Dh-WO-cMV" id="Xvf-Eu-mYQ"/>
+                        <outlet property="parrentView" destination="LDG-Ug-FFq" id="zGB-Nk-hJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBi-dU-eiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

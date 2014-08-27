@@ -51,7 +51,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			self.navigationController.pushViewController(wndPropVC, animated: true)
 		default:
 			let alert = UIAlertView()
-			alert.message = "Controlle isn't specified"
+			alert.message = "\nController isn't specified"
 			alert.addButtonWithTitle("OK =(")
 			alert.show()
 		}
