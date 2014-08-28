@@ -31,4 +31,20 @@ class ViewsViewController: UIViewController, UITableViewDataSource, UITableViewD
 		
 		return cell
 	}
+	
+	func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+		let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+		
+		switch indexPath.row {
+		case 0:
+			let tabGroupsVC: UIViewController = storyboard.instantiateViewControllerWithIdentifier("eventsPropagation") as UIViewController
+			self.navigationController.pushViewController(tabGroupsVC, animated: true)
+		default:
+			let alert = UIAlertView()
+			alert.message = "\nController isn't specified"
+			alert.addButtonWithTitle("OK =(")
+			alert.show()
+		}
+	}
+
 }

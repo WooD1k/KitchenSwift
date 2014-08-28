@@ -51,7 +51,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			self.navigationController.pushViewController(wndPropVC, animated: true)
 		case 4:
 			let viewsVC: UIViewController = storyboard.instantiateViewControllerWithIdentifier("views") as UIViewController
-			viewsVC.title = "Window Properties"
+			viewsVC.title = "Views"
 			self.navigationController.pushViewController(viewsVC, animated: true)
 		default:
 			let alert = UIAlertView()
